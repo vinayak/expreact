@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import logo from './images/logo.png'
 import {Link} from 'react-router-dom';
 
 class App extends Component {
@@ -9,7 +9,7 @@ class App extends Component {
       <div>
         <header>
           <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <Link to="/" className="navbar-brand">SEARS</Link>
+            <Link to="/" className="navbar-brand"><img src={logo} alt="logo"/></Link>
 
             <div className="collapse navbar-collapse">
               <ul className="nav navbar-nav navbar-right">
