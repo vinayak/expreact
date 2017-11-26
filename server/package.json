@@ -1,0 +1,14 @@
+{
+  "name": "sears_website_backend",
+  "version": "1.0.0",
+  "description": "sears website backend with express js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Vinayak Malavade",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
