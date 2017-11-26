@@ -17,8 +17,8 @@ db.on('error', (err) =>{
 let vin={name: 'Vinayak Malavade'}
 let User = require('./models/users')
 
-app.get('/', (req, res) => {
-  res.send(vin)
+app.get('/api', (req, res) => {
+  res.json('Welcome To React');
 });
 
 app.listen(3001,() => {
