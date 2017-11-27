@@ -35,3 +35,18 @@ padding-left: 15px;
 code {
 font-size: 80%;
 }
+
+/* Custom CSS for Header
+-------------------------------------------------- */
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-top: 2px solid #eee;
+}
+.navbar{
+  margin-bottom: 10px !important;
+}
+.navbar-right{
+  margin-top: 10px !important;
+}

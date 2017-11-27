@@ -6,6 +6,7 @@ class Header extends Component {
   render() {
     return (
       <header>
+      <div className="container">
         <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <Link to="/" className="navbar-brand"><img src={logo} alt="logo"/></Link>
 
@@ -20,6 +21,7 @@ class Header extends Component {
             </ul>
           </div>
         </nav>
+        </div>
       </header>
     );
   }

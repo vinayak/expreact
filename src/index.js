@@ -21,6 +21,7 @@ render((
   <BrowserRouter>
     <div>
       <Header/>
+      <hr/>
         <Route exact path="/" component={Home} />
         <Route path="/management" component={Management} />
         <Route path="/media_center" component={MediaCenter} />
