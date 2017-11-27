@@ -50,3 +50,9 @@ hr {
 .navbar-right{
   margin-top: 10px !important;
 }
+
+/* Custom CSS for Footer
+-------------------------------------------------- */
+.footer{
+  line-height: 30px;
+}
