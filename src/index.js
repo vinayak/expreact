@@ -14,9 +14,6 @@ import Blogs from './pages/Blogs/Blogs';
 import Contact from './pages/Contact/Contact';
 import Jobs from './pages/Jobs/Jobs';
 
-
-
-
 render((
   <BrowserRouter>
     <div>

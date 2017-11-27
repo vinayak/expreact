@@ -6,8 +6,8 @@ import {Link} from 'react-router-dom';
 class Footer extends Component {
   render() {
     return (
-      <footer class="footer">
-        <div class="container text-center">
+      <footer className="footer">
+        <div className="container text-center">
           Copyright &copy; 2017 Sears Holdings India | All Rights Reserved <br/>
           <Link to={Privacy} target='_blank'>Privacy Policy</Link> | <Link to={Terms} target='_blank'>Social Media Terms of Use</Link>
         </div>
