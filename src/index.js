@@ -1,22 +1,34 @@
 import React from 'react';
 import {render} from 'react-dom';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
-import './index.css';
+import { BrowserRouter, Route} from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 
-import App from './App';
-import Management from './pages/Management/Management';
-// import NotFound from './pages/NotFound/NotFound';
+import Header from './Header';
+import Footer from './Footer';
+import './index.css'
+
 import Home from './pages/Home/Home';
+import Management from './pages/Management/Management';
+import MediaCenter from './pages/MediaCenter/MediaCenter';
+import Blogs from './pages/Blogs/Blogs';
+import Contact from './pages/Contact/Contact';
+import Jobs from './pages/Jobs/Jobs';
+
+
 
 
 render((
-  <Router>
+  <BrowserRouter>
     <div>
-      <Route path="/" component={App} />
-      <Route exact path="/" component={Home} />
-      <Route exact path="/management" component={Management} />
+      <Header/>
+        <Route exact path="/" component={Home} />
+        <Route path="/management" component={Management} />
+        <Route path="/media_center" component={MediaCenter} />
+        <Route path="/blogs" component={Blogs} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/jobs" component={Jobs} />
+      <Footer/>
     </div>
-  </Router>
+  </BrowserRouter>
 ), document.getElementById('root'));
 registerServiceWorker();

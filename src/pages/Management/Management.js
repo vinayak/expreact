@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Management.css';
 
-class Contact extends Component {
+class Management extends Component {
   render() {
     return (
         <h1>Management</h1>
@@ -9,4 +9,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default Management;
