@@ -3,7 +3,7 @@ const app=express();
 const mongoose= require('mongoose');
 
 
-mongoose.connect('mongodb://localhost/sears', { useMongoClient: true });
+mongoose.connect('mongodb://localhost/searswebsite', { useMongoClient: true });
 let db = mongoose.connection;
 
 //DB Check
@@ -19,6 +19,10 @@ let User = require('./models/users')
 
 app.get('/api', (req, res) => {
   res.json('Welcome To React');
+});
+
+app.get('/api/executive', (req, res) => {
+  res.json(req.query.name);
 });
 
 app.listen(3001,() => {

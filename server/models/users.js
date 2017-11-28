@@ -14,4 +14,4 @@ let userSchema =mongoose.Schema({
     required: true
   }
 });
-let Article = module.exports  = mongoose.model('User', userSchema );
+let User = module.exports  = mongoose.model('User', userSchema );
