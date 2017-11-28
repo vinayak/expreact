@@ -13,6 +13,7 @@ import MediaCenter from './pages/MediaCenter/MediaCenter';
 import Blogs from './pages/Blogs/Blogs';
 import Contact from './pages/Contact/Contact';
 import Jobs from './pages/Jobs/Jobs';
+import Profile from './pages/Profile/Profile';
 
 render((
   <BrowserRouter>
@@ -25,6 +26,7 @@ render((
         <Route path="/blogs" component={Blogs} />
         <Route path="/contact" component={Contact} />
         <Route path="/jobs" component={Jobs} />
+        <Route path="/profile/:user" component={Profile} />
       <Footer/>
     </div>
   </BrowserRouter>
