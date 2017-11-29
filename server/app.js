@@ -14,15 +14,19 @@ db.on('error', (err) =>{
   console.log(err);
 });
 
-let vin={name: 'Vinayak Malavade'}
-let User = require('./models/users')
+let User = require('./models/user')
+let Executive = require('./models/executive')
 
 app.get('/api', (req, res) => {
   res.json('Welcome To React');
 });
 
 app.get('/api/executive', (req, res) => {
-  res.json(req.query.name);
+  Executive.findOne({name:req.query.name }, function(err, executives){
+    console.log(executives)
+    res.json(executives);
+  })
+  // res.json(req.query.name);
 });
 
 app.listen(3001,() => {

@@ -10,12 +10,20 @@ class Profile extends Component {
       .then(response => response.json())
       .then(json => this.setState({ message: json }));
   }
-
   render() {
+    let executive= this.state.message
+    console.log(executive.name)
+    console.log(executive.content)
     return (
-      <div>
+      <div className="container">
         <h1>Profile</h1>
-        <img src={process.env.PUBLIC_URL + '/images/'+this.state.message + '.jpg'} />
+        <div className="col-md-3">
+        <img src={process.env.PUBLIC_URL + '/images/'+executive.name + '.jpg'}  width="200" height="200" alt="Rakesh Chawla" />
+        </div>
+        <div className="col-md-9">
+           <div dangerouslySetInnerHTML={{__html: executive.content}}/>
+        </div>
+
       </div>
     );
   }

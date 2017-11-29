@@ -10,4 +10,4 @@ let executiveSchema =mongoose.Schema({
     required: true
   }
 });
-let Executive = module.exports  = mongoose.model('User', executiveSchema );
+let Executive = module.exports  = mongoose.model('Executive', executiveSchema );
