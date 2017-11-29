@@ -33,7 +33,7 @@ class Management extends Component {
               <p className="text-center">Head Finance</p>
             </div>
             <div className="col-sm-2">
-              <p><img src={process.env.PUBLIC_URL + '/images/deena_dayalan_naidu.jpg'} alt="Deena Dayalan Naidu" width="150" height="150" /></p>
+              <p><img src={process.env.PUBLIC_URL + '/images/Deen.jpg'} alt="Deena Dayalan Naidu" width="150" height="150" /></p>
               <p className="text-center"><Link to="/profile/deena_dayalan_naidu">Deena Dayalan Naidu</Link></p>
               <p className="text-center">Head of IT, Infrastructure Information Security</p>
             </div>
