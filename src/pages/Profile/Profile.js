@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Img from './rakash_chawla.jpg';
 
 class Profile extends Component {
   constructor() {
@@ -13,13 +12,10 @@ class Profile extends Component {
   }
 
   render() {
-    const img = require('./rakash_chawla.jpg')
-    // const img = require('./' + this.state.message+'.jpg')
     return (
       <div>
         <h1>Profile</h1>
-        {this.state.message}
-        <img src={img}/>
+        <img src={process.env.PUBLIC_URL + '/images/'+this.state.message + '.jpg'} />
       </div>
     );
   }
