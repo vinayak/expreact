@@ -17,7 +17,7 @@ class Contact extends Component {
         </div>
         <div className="padbottom">
           <div className="col-md-4">
-            <iframe width="400" height="400" frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJL4xGd8XDwjsRubyz8GzZPZU&key=AIzaSyA8xOyZAIdcO_TbHial-hklF-tEuwbs0MU" title="Pune" allowFullScreen></iframe>
+            <iframe width="300" height="400" frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJL4xGd8XDwjsRubyz8GzZPZU&key=AIzaSyA8xOyZAIdcO_TbHial-hklF-tEuwbs0MU" title="Pune" allowFullScreen></iframe>
           </div>
           <div className="col-md-4">
             <iframe width="400" height="400" frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJr-_vF6kTrjsR2M6rZTd5b3w&key=AIzaSyA8xOyZAIdcO_TbHial-hklF-tEuwbs0MU" title="Bangalore" allowFullScreen></iframe>

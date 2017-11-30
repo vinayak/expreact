@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import classnames from 'classnames';
 
 class ContactForm extends Component {
   constructor(props){
     super(props)
     this.state={
       firstname: '',
-      email: ''
+      email: '',
+      message:'',
+      errors: {}
     }
     this.onChange =this.onChange.bind(this)
     this.onSubmit =this.onSubmit.bind(this)
@@ -15,13 +18,27 @@ class ContactForm extends Component {
   }
   onSubmit(e){
     e.preventDefault();
-    console.log(this.state)
+    this.setState({errors:{}})
+    fetch('api/contact', {
+        method: 'post',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify(this.state)
+    }).then((data)=>{
+      return data.json()
+    }).then((data)=>{
+      this.setState({errors: data})
+      console.log(data)
+    })
+    // fetch.post('api/contact', {data: this.state})
+    // console.log(this.state)
   }
   render() {
+    const {errors} = this.state;
+    console.log(errors)
     return(
       <form onSubmit={this.onSubmit}>
         <div className="text-center text-uppercase"><h4>Write to Us</h4></div>
-          <div className="form-group">
+          <div className={classnames("form-group", {'has-error':errors.firstname})}>
             <input
               value={this.state.firstname}
               onChange={this.onChange}
@@ -29,8 +46,9 @@ class ContactForm extends Component {
               name="firstname"
               className="form-control"
               placeholder="Name"/>
+              {errors.firstname && <span className="help-block">{errors.firstname}</span>}
           </div>
-          <div className="form-group">
+          <div className={classnames("form-group", {'has-error':errors.email})}>
             <input
               value={this.state.email}
               onChange={this.onChange}
@@ -38,8 +56,9 @@ class ContactForm extends Component {
               name="email"
               className="form-control"
               placeholder="Email" />
+              {errors.email && <span className="help-block">{errors.email}</span>}
           </div>
-          <div className="form-group">
+          <div className={classnames("form-group", {'has-error':errors.message})}>
             <textarea
               value={this.state.message}
               onChange={this.onChange}
@@ -47,6 +66,7 @@ class ContactForm extends Component {
               name="message"
               className="form-control"
               placeholder="Your message" />
+              {errors.message && <span className="help-block">{errors.message}</span>}
           </div>
           <div className="form-group">
             <button className="btn btn-primary"> Submit</button>
