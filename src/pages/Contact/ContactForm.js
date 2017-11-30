@@ -6,6 +6,7 @@ class ContactForm extends Component {
     super(props)
     this.state={
       firstname: '',
+      lastname: '',
       email: '',
       message:'',
       errors: {}
@@ -27,26 +28,38 @@ class ContactForm extends Component {
       return data.json()
     }).then((data)=>{
       this.setState({errors: data})
-      console.log(data)
+      // console.log(data)
     })
     // fetch.post('api/contact', {data: this.state})
     // console.log(this.state)
   }
   render() {
     const {errors} = this.state;
-    console.log(errors)
+    // console.log(errors)
     return(
       <form onSubmit={this.onSubmit}>
         <div className="text-center text-uppercase"><h4>Write to Us</h4></div>
-          <div className={classnames("form-group", {'has-error':errors.firstname})}>
-            <input
-              value={this.state.firstname}
-              onChange={this.onChange}
-              type="text"
-              name="firstname"
-              className="form-control"
-              placeholder="Name"/>
-              {errors.firstname && <span className="help-block">{errors.firstname}</span>}
+          <div className="row">
+            <div className={classnames("form-group col-md-6", {'has-error':errors.firstname})}>
+              <input
+                value={this.state.firstname}
+                onChange={this.onChange}
+                type="text"
+                name="firstname"
+                className="form-control"
+                placeholder="First Name"/>
+                {errors.firstname && <span className="help-block">{errors.firstname}</span>}
+            </div>
+            <div className={classnames("form-group col-md-6", {'has-error':errors.lastname})}>
+              <input
+                value={this.state.lastname}
+                onChange={this.onChange}
+                type="text"
+                name="lastname"
+                className="form-control"
+                placeholder="Last Name"/>
+                {errors.lastname && <span className="help-block">{errors.lastname}</span>}
+            </div>
           </div>
           <div className={classnames("form-group", {'has-error':errors.email})}>
             <input

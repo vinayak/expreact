@@ -7,6 +7,7 @@ class Footer extends Component {
   render() {
     return (
       <footer className="footer">
+      <hr/>
         <div className="container text-center">
           Copyright &copy; 2017 Sears Holdings India | All Rights Reserved <br/>
           <Link to={Privacy} target='_blank'>Privacy Policy</Link> | <Link to={Terms} target='_blank'>Social Media Terms of Use</Link>
