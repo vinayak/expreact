@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Social from './Social'
 
 class Profile extends Component {
   constructor() {
@@ -12,8 +13,10 @@ class Profile extends Component {
   }
   render() {
     let executive= this.state.message
-    console.log(executive.name)
-    console.log(executive.content)
+    let links=executive.links
+    // console.log(executive.name)
+    // console.log(executive.links)
+    if(links === undefined){links=[]}
     return (
       <div className="container">
         <h1>Profile</h1>
@@ -23,7 +26,11 @@ class Profile extends Component {
         <div className="col-md-9">
            <div dangerouslySetInnerHTML={{__html: executive.content}}/>
         </div>
-
+        <div>
+          {links.map((link)=>{
+            return <Social link={link} key={link.id}/>
+          })}
+        </div>
       </div>
     );
   }

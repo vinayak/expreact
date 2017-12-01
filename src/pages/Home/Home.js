@@ -17,7 +17,7 @@ class Home extends Component {
   componentDidMount() {
     const jsCode = `
       $('#myCarousel').carousel({
-          interval: 1000,
+          interval: 1500,
           cycle: true
       });
     `;
