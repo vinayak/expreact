@@ -25,12 +25,13 @@ class Profile extends Component {
         </div>
         <div className="col-md-9">
            <div dangerouslySetInnerHTML={{__html: executive.content}}/>
+           <div>
+             {links.map((link)=>{
+               return <Social link={link} key={link.id}/>
+             })}
+           </div>
         </div>
-        <div>
-          {links.map((link)=>{
-            return <Social link={link} key={link.id}/>
-          })}
-        </div>
+
       </div>
     );
   }
