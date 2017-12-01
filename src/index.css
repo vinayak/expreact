@@ -51,6 +51,14 @@ hr {
   margin-top: 10px !important;
 }
 
+/* carousel CSS for Home
+-------------------------------------------------- */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
+
 /* Custom CSS for Footer
 -------------------------------------------------- */
 .footer{

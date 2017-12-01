@@ -37,11 +37,11 @@ class Contact extends Component {
             <p><b>SHI [dot] Communications [at] searshc [dot] com</b></p>
             <p>Please send your resumes to</p>
             <p><b>SHIRecruitment [at] searshc [dot] com</b></p>
-            <img src={twitter} alt="twitter" />
-            <img src={facebook} alt="facebook" />
-            <img src={pinterest} alt="pinterest" />
-            <img src={linkedin} alt="linkedin" />
-            <img src={google} alt="google" />
+            <img className="spacing" src={twitter} alt="twitter" />
+            <img className="spacing" src={facebook} alt="facebook" />
+            <img className="spacing" src={pinterest} alt="pinterest" />
+            <img className="spacing" src={linkedin} alt="linkedin" />
+            <img className="spacing" src={google} alt="google" />
           </div>
           <div className="col-md-6">
             <ContactForm />
