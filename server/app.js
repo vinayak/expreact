@@ -28,6 +28,7 @@ app.use(bodyParser.json());
 
 let User = require('./models/user')
 let Executive = require('./models/executive')
+let Blog = require('./models/blog')
 
 app.get('/api', (req, res) => {
   res.json('Welcome To React');
@@ -87,6 +88,14 @@ app.get('/api/executive', (req, res) => {
   Executive.findOne({name:req.query.name }, function(err, executives){
     // console.log(executives)
     res.json(executives);
+  })
+  // res.json(req.query.name);
+});
+
+app.get('/api/blog', (req, res) => {
+  Blog.find({}, function(err, blogs){
+    console.log(blogs)
+    res.json(blogs);
   })
   // res.json(req.query.name);
 });
