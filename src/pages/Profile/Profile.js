@@ -19,7 +19,6 @@ class Profile extends Component {
     if(links === undefined){links=[]}
     return (
       <div className="container">
-        <h1>Profile</h1>
         <div className="col-md-3">
         <img src={process.env.PUBLIC_URL + '/images/'+executive.name + '.jpg'}  width="200" height="200" alt="Rakesh Chawla" />
         </div>

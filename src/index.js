@@ -20,6 +20,7 @@ render((
     <div>
       <Header/>
       <hr/>
+      <div className="main">
         <Route exact path="/" component={Home} />
         <Route path="/management" component={Management} />
         <Route path="/media_center" component={MediaCenter} />
@@ -27,6 +28,7 @@ render((
         <Route path="/contact" component={Contact} />
         <Route path="/jobs" component={Jobs} />
         <Route path="/profile/:user" component={Profile} />
+      </div>
       <Footer/>
     </div>
   </BrowserRouter>

@@ -37,28 +37,28 @@ class Home extends Component {
           </ol>
           <div className="carousel-inner" role="listbox">
             <div className="item active">
-              <img src={Slider1} alt="Chania" width="1349" height="400" />
+              <img src={Slider1} alt="Chania" width="930" height="400" />
               <div className="carousel-caption">
                 <h3>Chania</h3>
                 <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
               </div>
             </div>
             <div className="item">
-              <img src={Slider2} alt="Chania" width="1349" height="400"/>
+              <img src={Slider2} alt="Chania" width="930" height="400"/>
               <div className="carousel-caption">
                 <h3>Chania</h3>
                 <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
               </div>
             </div>
             <div className="item">
-              <img src={Slider3} alt="Flower" width="1349" height="400"/>
+              <img src={Slider3} alt="Flower" width="930" height="400"/>
               <div className="carousel-caption">
                 <h3>Flowers</h3>
                 <p>Beautiful flowers in Kolymbari, Crete.</p>
               </div>
             </div>
             <div className="item">
-              <img src={Slider4} alt="Flower" width="1349" height="400"/>
+              <img src={Slider4} alt="Flower" width="930" height="400"/>
               <div className="carousel-caption">
                 <h3>Flowers</h3>
                 <p>Beautiful flowers in Kolymbari, Crete.</p>
