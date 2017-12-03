@@ -13,9 +13,9 @@ class Contact extends Component {
     return (
       <div className="Contact">
         <div className="title">
-          <h3 className="text-uppercase text-center">Contact <span className="wlast">Us</span></h3>
+          <h3 className="text-uppercase text-center">Contact <span className="wlast">Us</span><span className="small-line"></span></h3>
         </div>
-        <div className="padbottom">
+        <div>
           <div className="col-md-4">
             <iframe width="400" height="400" frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJL4xGd8XDwjsRubyz8GzZPZU&key=AIzaSyA8xOyZAIdcO_TbHial-hklF-tEuwbs0MU" title="Pune" allowFullScreen></iframe>
           </div>
@@ -26,24 +26,23 @@ class Contact extends Component {
             <iframe width="400" height="400" frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRa3U-cKTyzsR5jvEBLqRCRA&key=AIzaSyA8xOyZAIdcO_TbHial-hklF-tEuwbs0MU" title="Hyderabad" allowFullScreen></iframe>
           </div>
         </div>
-        <div className="container">
-          <div className="title">
-            <h3 className="text-uppercase text-center">Connect With Us</h3>
-          </div>
-        </div>
+        <div className="clearfix"></div>
+
         <div className="container">
           <div className="col-md-6 text-center" >
+            <h3 className="text-uppercase text-center vspacing">Connect With Us</h3>
             <p>To talk to us or give feedback, please send your messages to</p>
             <p><b>SHI [dot] Communications [at] searshc [dot] com</b></p>
             <p>Please send your resumes to</p>
             <p><b>SHIRecruitment [at] searshc [dot] com</b></p>
-            <img className="spacing" src={twitter} alt="twitter" />
-            <img className="spacing" src={facebook} alt="facebook" />
-            <img className="spacing" src={pinterest} alt="pinterest" />
-            <img className="spacing" src={linkedin} alt="linkedin" />
-            <img className="spacing" src={google} alt="google" />
+            <a href="https://twitter.com/SearsIndia" target="_blank"><img className="spacing" src={twitter} alt="twitter" /></a>
+            <a href="https://www.facebook.com/searsindiaofficial" target="_blank"><img className="spacing" src={facebook} alt="facebook" /></a>
+            <a href="https://www.pinterest.com/searsindia" target="_blank"><img className="spacing" src={pinterest} alt="pinterest" /></a>
+            <a href="https://www.linkedin.com/company/searsindia" target="_blank"><img className="spacing" src={linkedin} alt="linkedin" /></a>
+            <a href="https://plus.google.com/117032605762076802971" target="_blank"><img className="spacing" src={google} alt="google" /></a>
           </div>
           <div className="col-md-6">
+            <h3 className="text-uppercase text-center vspacing">Write to Us</h3>
             <ContactForm />
           </div>
         </div>

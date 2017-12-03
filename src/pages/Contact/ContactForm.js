@@ -38,7 +38,7 @@ class ContactForm extends Component {
     // console.log(errors)
     return(
       <form onSubmit={this.onSubmit}>
-        <div className="text-center text-uppercase"><h4>Write to Us</h4></div>
+        <div className="text-center text-uppercase"></div>
           <div className="row">
             <div className={classnames("form-group col-md-6", {'has-error':errors.firstname})}>
               <input

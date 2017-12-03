@@ -2,9 +2,20 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.padbottom{
-  padding-bottom: 50px;
+.vspacing {
+  padding:15px 0px;
 }
 .spacing {
   padding-right:15px;
+}
+.small-line {
+    width: 37px;
+    display: block;
+    height: 1px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #595ca1;
 }
