@@ -10,7 +10,7 @@ margin-bottom: 60px;
 font-family: Quantico,sans-serif !important;
 }
 .main{
-  margin: 30px;
+  margin: 15px;
 }
 .footer {
 position: absolute;
@@ -72,6 +72,6 @@ hr {
 .wlast{
   color: #595ca1;
 }
-h3{
+h3, h2{
   font-weight: bold;
 }

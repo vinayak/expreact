@@ -31,10 +31,10 @@ class Contact extends Component {
         <div className="container">
           <div className="col-md-6 text-center" >
             <h3 className="text-uppercase text-center vspacing">Connect With Us</h3>
-            <p>To talk to us or give feedback, please send your messages to</p>
-            <p><b>SHI [dot] Communications [at] searshc [dot] com</b></p>
-            <p>Please send your resumes to</p>
-            <p><b>SHIRecruitment [at] searshc [dot] com</b></p>
+            <p className="text-center">To talk to us or give feedback, please send your messages to</p>
+            <p className="text-center"><b>SHI [dot] Communications [at] searshc [dot] com</b></p>
+            <p className="text-center">Please send your resumes to</p>
+            <p className="text-center"><b>SHIRecruitment [at] searshc [dot] com</b></p>
             <a href="https://twitter.com/SearsIndia" target="_blank"><img className="spacing" src={twitter} alt="twitter" /></a>
             <a href="https://www.facebook.com/searsindiaofficial" target="_blank"><img className="spacing" src={facebook} alt="facebook" /></a>
             <a href="https://www.pinterest.com/searsindia" target="_blank"><img className="spacing" src={pinterest} alt="pinterest" /></a>
