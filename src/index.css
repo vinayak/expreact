@@ -10,7 +10,8 @@ margin-bottom: 60px;
 font-family: Quantico,sans-serif !important;
 }
 .main{
-  margin: 15px;
+  margin: auto;
+  width:90%;
 }
 .footer {
 position: absolute;
