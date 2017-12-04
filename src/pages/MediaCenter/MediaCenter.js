@@ -35,26 +35,28 @@ class MediaCenter extends Component {
   // }
   render() {
     return (
-      <div>
-        <h1>Media Center</h1>
-        <div className="tabs">
-          <nav>
-            <a>In the News</a>
-            <a>Latest Events</a>
-            <a>Social Causes</a>
-            <a>Press Releases</a>
-          </nav>
-          <div className="content">
-            <p>Content #1</p>
-          </div>
-          <div className="content">
-            <p>Content #2</p>
-          </div>
-          <div className="content">
-            <p>Content #3</p>
-          </div>
-          <div className="content">
-            <p>Content #4</p>
+      <div className="text-center">
+        <h2>Media Center</h2>
+        <div className="col-md-10 col-md-offset-2">
+          <div className="tabs">
+            <nav>
+              <a>In the News</a>
+              <a>Latest Events</a>
+              <a>Social Causes</a>
+              <a>Press Releases</a>
+            </nav>
+            <div className="content">
+              <p>Content #1</p>
+            </div>
+            <div className="content">
+              <p>Content #2</p>
+            </div>
+            <div className="content">
+              <p>Content #3</p>
+            </div>
+            <div className="content">
+              <p>Content #4</p>
+            </div>
           </div>
         </div>
       </div>
