@@ -24,7 +24,9 @@ width: 100%;
 cursor: pointer;
 }
 
-.tabs nav a:hover,
+.tabs nav a:hover{
+  text-decoration: none;
+  }
 .tabs nav a.selected {
 background: #b31f41;
 color: #fff;
